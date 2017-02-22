@@ -1,0 +1,9 @@
+<p>
+  user {{ id }} works!
+</p>
+<button (click)="onNavigate()">Back to Home with query parameter</button>
+<p>
+  <a [routerLink]="['']" [queryParams]="{analysis:100, secParam:'2nd'}" [preserveQueryParams]="true" [fragment]="'section1'">Back to Home with qeury parameter via routerLink</a>
+</p>
+<router-outlet></router-outlet>
+
